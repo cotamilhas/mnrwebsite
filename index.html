@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.ico">
+    <script src="script.js"></script>
+    <title>ModNation Racers</title>
+</head>
+
+<body id="body">
+    <header>
+        <img class="logo" src="img/MNRLogo.png">
+        <!--<img class="imgtag" src="img/img_tag.png">-->
+        <div class="btnSelection">
+            <button class="colorizable"><img src="img/btnSelected.png"></button>
+            <button class="colorizable"><img src="img/btnOne.png"></button>
+            <button class="colorizable"><img src="img/btnTwo.png"></button>
+            <button class="colorizable"><img src="img/btnThree.png"></button>
+            <button class="colorizable"><img src="img/btnFour.png"></button>
+        </div>
+    </header>
+    <nav></nav>
+    <section>
+        <article>
+            <h1>Welcome to ModNation Racers!</h1>
+            <p>ModNation Racers is a kart racing game for the PlayStation 3.</p>
+            <img class="btnCustomise" src="img/btnCustomise.png" onclick="mostrarPopup()">
+            <div id="popup">
+                <div class="popupBTNClose">
+                    <img class="ClosePopUp" src="img/btnClose.png" onclick="fecharPopup()">
+                </div>
+                <div class="popupText">
+                    <h2>Customise!</h2>
+                </div>
+                <div class="tabspace">
+                    <div class="orgContent">
+                        <p>Wallpapers</p>
+                        <hr>
+                        <button class="btn" onclick="changeBackground('img/bg_White.jpg', 'black')"><img
+                                src="img/iconBGOne.png"></button>
+                        <button class="btn" onclick="changeBackground('img/bg_desert.jpg', 'white')"><img
+                                src="img/iconBGTwo.png"></button>
+                        <button class="btn" onclick="changeBackground('img/bg_PSPwp.png', 'white')"><img
+                                src="img/iconBGThree.png"></button>
+                        <script src="script.js"></script>
+                        <p>Button's Style</p>
+                        <hr>
+                        <button class="btn" onclick="changeImages(true)"><img src="img/iconBTNOne.png"></button>
+                        <button class="btn" onclick="changeImages(false)"><img src="img/iconBTNTwo.png"></button>
+                        <script src="script.js"></script>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+        <article>
+            <h2>Community</h2>
+            <p>Connect with other ModNation Racers players to share your tracks, characters and karts.</p>
+        </article>
+    </section>
+    <div class="centerfooter">
+        <div class="imgfooter">
+            <div class="test">
+                <marquee behavior="" direction="">Welcome to ModNation Racers Unofficial Website - H3nr1qu3x</marquee>
+            </div>
+            <div class="joinimg">
+               <a href="https://discord.com/invite/aFcmym2"><img src="img/txtJoin.png"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

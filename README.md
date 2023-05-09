@@ -12,6 +12,6 @@ Brand New ModNation Racers Website!!!
  
  - Support Modnation Racers: Mini-GP (Maybe a Downloadable link);
  
- - A mobile interface (I don't have any idea how I can do that :D) 
+ - ~A mobile interface (I don't have any idea how I can do that :D)~
  
 https://h3nr1qu3x.github.io/mnrwebsite/

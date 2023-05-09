@@ -82,3 +82,7 @@ function checkPreviousChoice() {
 
 
 window.onload = checkPreviousChoice;
+
+function Minigame() {
+  window.open("https://mega.nz/file/135xDIYK#bx9IPx_lXat2ROUNrA2zMPxHCM8D8Jow_-RAYzRnXi4");
+}

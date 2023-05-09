@@ -7,7 +7,7 @@
 @font-face {
     font-family: "ModNation Title";
     src: url("font/ModNationTitle.ttf");
-    letter-spacing: px;
+    letter-spacing: 1px;
 }
 
 
@@ -135,12 +135,31 @@ button.popup-abrir {
 }
 
 .btnCustomise {
-    float: right;
+    position: absolute;
+    right: 0px;
+    top: 105px;
+    z-index: 100;
+    width: 76px;
+    height: 253px
+}
+
+#btnMinigame{
+    position: absolute;
+    left: 0px;
+    top: 105px;
+    z-index: 100;
+    width: 76px;
+    height: 253px;
+    cursor: pointer;
+}
+
+.btnMiniGame {
+    float: left;
     margin: 0;
     padding: 0;
     cursor: pointer;
-
 }
+
 
 .logo {
     padding-left: 20px;
@@ -226,11 +245,14 @@ input[type="radio"]:checked+img {
 .popupText {
     padding-top: 7%;
     padding-left: 15%;
+    font-size: 25px;
+
 }
 
-.popupText h2 {
+.popupText p {
     font-size: 25px;
     color: white;
+    font-family: 'ModNation Title';
 }
 
 .btn {
@@ -275,7 +297,7 @@ hr {
     cursor: pointer;
 }
 
-.btnSelection button:first-child{
+.btnSelection button:first-child {
     top: 16px;
     position: relative;
 }
@@ -284,10 +306,9 @@ hr {
     text-align: left;
 }
 
-.joinimg img{
+.joinimg img {
     width: 15%;
     position: relative;
     bottom: 30px;
     padding-left: 3%;
 }
-

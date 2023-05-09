@@ -15,6 +15,32 @@ function changeBackground(imagePath, textColor) {
   body.style.color = textColor;
   localStorage.setItem("backgroundImage", imagePath);
   localStorage.setItem("textColor", textColor);
+  
+  if (getComputedStyle(document.body).backgroundImage.includes('bg_PSPwp.png')) {
+
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    header.style.backgroundColor = '#0b1e33';
+    nav.style.backgroundColor = '#3f434c';
+    header.style.backgroundImage = '';
+  }
+  
+
+  else if (getComputedStyle(document.body).backgroundImage.includes('bg_desert.jpg')) {
+   const body = document.querySelector('body');
+    const header = document.querySelector('header');
+    header.style.backgroundImage = 'url(img/bg_header.jpg)';
+    const nav = document.querySelector('nav');
+    nav.style.backgroundColor = '#b94800';
+  }
+
+  else{
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    header.style.backgroundColor = '#333';
+    nav.style.backgroundColor = '#444';
+    header.style.backgroundImage = '';
+  }
 }
 
 var storedBackgroundImage = localStorage.getItem("backgroundImage");
@@ -31,8 +57,9 @@ if (storedTextColor) {
   if (body) { 
     body.style.color = storedTextColor;
   }
-}
 
+  
+}
 
 
 function changeImage(newSrc) {
@@ -43,7 +70,6 @@ function changeImage(newSrc) {
     changeButtons[i].setAttribute("data-old-src", oldSrc);
   }
 }
-
 
 function changeImages(colorized) {
 
@@ -80,9 +106,12 @@ function checkPreviousChoice() {
   }
 }
 
-
 window.onload = checkPreviousChoice;
 
 function Minigame() {
   window.open("https://mega.nz/file/135xDIYK#bx9IPx_lXat2ROUNrA2zMPxHCM8D8Jow_-RAYzRnXi4");
 }
+function Signature() {
+  window.open("https://h3nr1qu3x.github.io/mnrprofileprototype/");
+}
+

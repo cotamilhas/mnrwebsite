@@ -137,18 +137,29 @@ button.popup-abrir {
 .btnCustomise {
     position: absolute;
     right: 0px;
-    top: 105px;
-    z-index: 100;
+    top: 15%;
+    z-index: 2;
     width: 76px;
-    height: 253px
+    height: 253px;
+    cursor: pointer;
 }
 
 #btnMinigame{
     position: absolute;
     left: 0px;
-    top: 105px;
-    z-index: 100;
-    width: 76px;
+    top: 15%;
+    z-index: 2;
+    width: 70px;
+    height: 253px;
+    cursor: pointer;
+}
+
+#btnSignature{
+    position: absolute;
+    left: 0px;
+    top: 60%;
+    z-index: 2;
+    width: 70px;
     height: 253px;
     cursor: pointer;
 }
@@ -191,6 +202,7 @@ button.popup-abrir {
     margin-bottom: 12px;
     padding-right: 20px;
     position: relative;
+    cursor: default;
 }
 
 .btnOtherOptions {
@@ -287,7 +299,6 @@ hr {
     margin-left: 0;
     margin-right: 0;
 
-
 }
 
 .colorizable {
@@ -311,4 +322,9 @@ hr {
     position: relative;
     bottom: 30px;
     padding-left: 3%;
+}
+
+.middleminigame{
+    margin: 0 auto;
+    text-align: center;
 }

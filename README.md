@@ -8,7 +8,7 @@ Brand New ModNation Racers Website!!!
  
  - Adding some feature that were present in the Original Website (Like Custom Signatures and Download Avatars);
  
- - Maybe a Discord Iframe from ModNation Racers Discord Server;
+ - ~Maybe a Discord Iframe from ModNation Racers Discord Server;~
  
  - ~Support Modnation Racers: Mini-GP (Maybe a Downloadable link);~
  

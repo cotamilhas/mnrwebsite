@@ -14,4 +14,4 @@ Brand New ModNation Racers Website!!!
  
  - A mobile interface (I don't have any idea how I can do that :D)
  
-https://h3nr1qu3x.github.io/mnrwebsite/
+https://cotamilhas.github.io/mnrwebsite/

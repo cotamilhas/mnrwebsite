@@ -1,330 +1,122 @@
-@font-face {
-    font-family: "ModNation Body";
-    src: url("font/ModNationBody.ttf");
-
-}
-
-@font-face {
-    font-family: "ModNation Title";
-    src: url("font/ModNationTitle.ttf");
-    letter-spacing: 1px;
-}
-
-
-#body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-family: 'ModNation Title', 'ModNation Body';
-    background-size: cover;
-    background-image: url('img/bg_White.jpg');
 }
 
-.texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 2px 2px #000;
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF;
+    --color2: #181818;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    letter-spacing: 1px;
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
 }
 
-p,
-marquee {
-    font-family: 'ModNation Body';
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: left;
-    font-size: 24px;
-
-}
-
-nav {
-    background-color: #444;
-    color: #fff;
-    padding: 5px;
-    align-items: start;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-
-section {
-    padding: 10px;
-}
-
-article {
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 18px;
-}
-
-h2 {
-    font-size: 16px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-}
-
-#popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 553px;
-    height: 583px;
-    padding: 20px;
-    background-image: url(img/tab_blue.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+.logo img {
+    width: 200px;
     z-index: 2;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
     display: none;
 }
 
-button.popup-abrir {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
-.tabspace {
-
-    padding-left: 15%;
-
+.close-menu {
+    top: 20px;
+    right: 20px;
 }
 
-.ClosePopUp {
-    float: right;
-    padding-right: 2%;
-    cursor: pointer;
-
+#check {
+    display: none;
 }
 
-.btnCustomise {
-    position: absolute;
-    right: 0px;
-    top: 15%;
-    z-index: 2;
-    width: 76px;
-    height: 253px;
-    cursor: pointer;
-}
+@media(max-width: 610px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
 
-#btnMinigame{
-    position: absolute;
-    left: 0px;
-    top: 15%;
-    z-index: 2;
-    width: 70px;
-    height: 253px;
-    cursor: pointer;
-}
+    .menu li {
+        margin-top: 40px;
+    }
 
-#btnSignature{
-    position: absolute;
-    left: 0px;
-    top: 60%;
-    z-index: 2;
-    width: 70px;
-    height: 253px;
-    cursor: pointer;
-}
+    .menu li a {
+        padding: 10px;
+    }
 
-.btnMiniGame {
-    float: left;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-}
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
 
+    #check:checked~.menu {
+        right: 0;
+    }
 
-.logo {
-    padding-left: 20px;
-    width: 14%;
-    cursor: pointer;
-    display: inline-block;
-}
+    .logo img {
+        width: 100px;
+    }
 
-/* looks cool but why */
-.logograffitii {
-    padding-left: 20px;
-    width: 13%;
-    cursor: pointer;
-    display: inline-block;
-}
-
-/* .imgtag{                TESTING
-            width: 8%;
-            float: right;
-          } */
-
-/*.btnClass{              TESTING
-            padding-left: 10000px;
-          }*/
-
-.btnSelection {
-    display: inline-block;
-    float: right;
-    margin-bottom: 12px;
-    padding-right: 20px;
-    position: relative;
-    cursor: default;
-}
-
-.btnOtherOptions {
-    display: inline-block;
-    float: right;
-    padding-left: 10px;
-    padding-top: 13px;
-    cursor: pointer;
-}
-
-.imgfooter {
-    text-align: center;
-    width: 959px;
-    height: 176px;
-    background-image: url(img/img_footer.png);
-
-}
-
-.test {
-    width: 600px;
-    height: 10px;
-    padding-top: 85px;
-    padding-left: 210px;
-    margin-right: 100px;
-}
-
-.centerfooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-}
-
-input[type="radio"]+img {
-    cursor: pointer;
-    border: 2px solid #ddd;
-    padding: 5px;
-}
-
-input[type="radio"]:checked+img {
-    border-color: #333;
-}
-
-.popupBTNClose {
-    padding-top: 20%;
-}
-
-.popupText {
-    padding-top: 7%;
-    padding-left: 15%;
-    font-size: 25px;
-
-}
-
-.popupText p {
-    font-size: 25px;
-    color: white;
-    font-family: 'ModNation Title';
-}
-
-.btn {
-    border: none;
-    padding: 0;
-    background: none;
-}
-
-.btn:hover {
-    cursor: pointer;
-}
-
-.btn img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.tabspace p {
-    padding-left: 1%;
-    color: #FAB501;
-    margin: 0;
-
-}
-
-hr {
-    width: 90%;
-    height: 2px;
-    background-image: linear-gradient(to right, #2a2e30, #24262794);
-    border: none;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-
-}
-
-.colorizable {
-    border: none;
-    padding: 0;
-    background: none;
-    cursor: pointer;
-}
-
-.btnSelection button:first-child {
-    top: 16px;
-    position: relative;
-}
-
-.imgfooter {
-    text-align: left;
-}
-
-.joinimg img {
-    width: 15%;
-    position: relative;
-    bottom: 30px;
-    padding-left: 3%;
-}
-
-.middleminigame{
-    margin: 0 auto;
-    text-align: center;
 }

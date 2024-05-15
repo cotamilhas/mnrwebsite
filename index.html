@@ -1,76 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/icon.ico">
-    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ModNation Racers</title>
-</head>
-
-<body id="body">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
     <header>
-        <img class="logo" src="img/MNRLogo.png">
-        <!--<img class="imgtag" src="img/img_tag.png">-->
-        <div class="btnSelection">
-            <button class="colorizable"><img src="img/btnSelected.png"></button>
-            <button class="colorizable"><img src="img/btnOne.png"></button>
-            <button class="colorizable"><img src="img/btnTwo.png"></button>
-            <button class="colorizable"><img src="img/btnThree.png"></button>
-            <button class="colorizable"><img src="img/btnFour.png"></button>
-        </div>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'><a href='#'><embed src="./swf/logo.swf"></a></li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Setup</a></li>
+                <li><a href="">Discord</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">My Profile</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
     </header>
-    <nav></nav>
-    <section>
-        <article>
-            <img class="btnCustomise" src="img/btnCustomise.png" onclick="mostrarPopup()">
-            <img id="btnMinigame" src="img/btnMinigame.png" onclick="Minigame()">
-            <img id="btnSignature" src="img/btnSignature.png" onclick="Signature()">
-            
-            <div id="popup">
-                <div class="popupBTNClose">
-                    <img class="ClosePopUp" src="img/btnClose.png" onclick="fecharPopup()">
-                </div>
-                <div class="popupText">
-                    <p>Customize!</p>
-                </div>
-                <div class="tabspace">
-                    <div class="orgContent">
-                        <p>Wallpapers</p>
-                        <hr>
-                        <button class="btn" onclick="changeBackground('img/bg_White.jpg', 'black')"><img
-                                src="img/iconBGOne.png"></button>
-                        <button class="btn" onclick="changeBackground('img/bg_desert.jpg', 'white')"><img
-                                src="img/iconBGTwo.png"></button>
-                        <button class="btn" onclick="changeBackground('img/bg_PSPwp.png', 'white')"><img
-                                src="img/iconBGThree.png"></button>
-                        <script src="script.js"></script>
-                        <p>Button's Style</p>
-                        <hr>
-                        <button class="btn" onclick="changeImages(true)"><img src="img/iconBTNOne.png"></button>
-                        <button class="btn" onclick="changeImages(false)"><img src="img/iconBTNTwo.png"></button>
-                        <script src="script.js"></script>
-                    </div>
-                </div>
-
-            </div>
-        </article>
-
-        <article>
-           
-        </article>
-
-    </section>
-    <div class="centerfooter">
-        <div class="imgfooter">
-            <div class="test">
-                <marquee behavior="" direction="">Welcome to ModNation Racers Unofficial Website - H3nr1qu3x</marquee>
-            </div>
-            <div class="joinimg">
-                <a href="https://discord.com/invite/aFcmym2"><img src="img/txtJoin.png"></a>
-            </div>
-        </div>
-    </div>
+<script src="./script.js"></script>
+<script src="./swf/config.js"></script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
-
 </html>

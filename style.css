@@ -21,7 +21,7 @@ body {
     padding: 12px 20px;
 }
 
-.logo img {
+.logo embed {
     width: 200px;
     z-index: 2;
 }

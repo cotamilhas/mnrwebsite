@@ -21,9 +21,9 @@ body {
     padding: 12px 20px;
 }
 
-.logo embed {
+.logo a * {
     width: 200px;
-    z-index: 2;
+    height: 80px;
 }
 
 .menu {
@@ -115,8 +115,9 @@ body {
         right: 0;
     }
 
-    .logo embed {
-        width: 100px;
+    .logo a * {
+        width: 180px;
+        height: 70px;
     }
 
 }
